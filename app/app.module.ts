@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { ProductComponent } from './products/product.component';
 import { NavbarComponent } from './nav/nav.component';
 
+import { ProductService } from ".products/product.service";
+
 @NgModule({
   imports: [ BrowserModule,
                    FormsModule,
@@ -17,7 +19,7 @@ import { NavbarComponent } from './nav/nav.component';
                           ProductComponent,
                           NavbarComponent
                           ],
-  providers: [ ],
+  providers: [ ProductService ],
   bootstrap:    [ AppComponent ]
 })
 

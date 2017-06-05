@@ -12,6 +12,7 @@ var app_routing_1 = require("./app.routing");
 var app_component_1 = require("./app.component");
 var product_component_1 = require("./products/product.component");
 var nav_component_1 = require("./nav/nav.component");
+var product_service_1 = require(".products/product.service");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -27,7 +28,7 @@ AppModule = __decorate([
             product_component_1.ProductComponent,
             nav_component_1.NavbarComponent
         ],
-        providers: [],
+        providers: [product_service_1.ProductService],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);
